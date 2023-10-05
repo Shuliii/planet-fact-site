@@ -1,0 +1,146 @@
+@import "../vars.css";
+
+.mainsection {
+  margin-top: 126px;
+  display: flex;
+  padding-right: 165px;
+  color: var(--white);
+  align-items: center;
+  flex-basis: 100%;
+  margin-bottom: 87px;
+}
+
+.imagecontainer {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagecontainer img:nth-child(2) {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  width: 163px;
+  transform: translateX(-50%);
+}
+
+.maincontainer {
+  max-width: 350px;
+  justify-self: flex-end;
+}
+
+.descriptioncontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.descriptioncontainer h1 {
+  font-family: "Antonio";
+  font-size: 80px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.descriptioncontainer p {
+  font-family: "League Spartan";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.source {
+  display: flex;
+  align-items: center;
+}
+
+.source span {
+  opacity: 50%;
+}
+
+.source a {
+  color: white;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.choicecontainer {
+  margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.choicecontainer span {
+  margin-right: 28px;
+  opacity: 50%;
+}
+
+.Mercury:active,
+.Mercury:focus {
+  background: var(--Mercury);
+}
+
+.Mercury.active {
+  background: var(--Mercury);
+}
+
+.Venus:active,
+.Venus:focus {
+  background: var(--Venus);
+}
+
+.Venus.active {
+  background: var(--Venus);
+}
+
+.Earth:active,
+.Earth:focus {
+  background: var(--Earth);
+}
+
+.Earth.active {
+  background: var(--Earth);
+}
+.Mars:active,
+.Mars:focus {
+  background: var(--Mars);
+}
+
+.Mars.active {
+  background: var(--Mars);
+}
+.Jupiter:active,
+.Jupiter:focus {
+  background: var(--Jupiter);
+}
+
+.Jupiter.active {
+  background: var(--Jupiter);
+}
+.Saturn:active,
+.Saturn:focus {
+  background: var(--Saturn);
+}
+
+.Saturn.active {
+  background: var(--Saturn);
+}
+.Uranus:active,
+.Uranus:focus {
+  background: var(--Uranus);
+}
+
+.Uranus.active {
+  background: var(--Uranus);
+}
+.Neptune:active,
+.Neptune:focus {
+  background: var(--Neptune);
+}
+
+.Neptune.active {
+  background: var(--Neptune);
+}

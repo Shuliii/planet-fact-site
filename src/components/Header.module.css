@@ -1,0 +1,208 @@
+@import "../vars.css";
+
+header {
+  padding-block: 22px 27px;
+  padding-inline: 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #979797;
+  opacity: 20%;
+}
+
+.logo {
+  font-family: "Antonio";
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.navlist {
+  color: var(--white);
+  font-family: "League Spartan";
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navlist ul {
+  list-style-type: none;
+  display: flex;
+  gap: 33px;
+}
+
+.navlist ul li {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.navlist ul li:hover {
+  opacity: 100%;
+}
+
+.Mercury {
+  position: relative;
+}
+
+.Mercury:hover::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Mercury);
+  overflow: hidden;
+
+  animation: moveRight;
+  animation-duration: 0.3s;
+}
+
+.Venus {
+  position: relative;
+}
+
+.Venus:hover::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Venus);
+  overflow: hidden;
+
+  animation: moveRight;
+  animation-duration: 0.3s;
+}
+
+.Earth {
+  position: relative;
+}
+
+.Earth:hover::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Earth);
+  overflow: hidden;
+
+  animation: moveRight;
+  animation-duration: 0.3s;
+}
+
+.Mars {
+  position: relative;
+}
+
+.Mars:hover::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Mars);
+  overflow: hidden;
+
+  animation: moveRight;
+  animation-duration: 0.3s;
+}
+
+.Jupiter {
+  position: relative;
+}
+
+.Jupiter:hover::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Jupiter);
+  overflow: hidden;
+
+  animation: moveRight;
+  animation-duration: 0.3s;
+}
+
+.Saturn {
+  position: relative;
+}
+
+.Saturn:hover::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Saturn);
+  overflow: hidden;
+
+  animation: moveRight;
+  animation-duration: 0.3s;
+}
+
+.Uranus {
+  position: relative;
+}
+
+.Uranus:hover::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Uranus);
+  overflow: hidden;
+
+  animation: moveRight;
+  animation-duration: 0.3s;
+}
+
+.Neptune {
+  position: relative;
+}
+
+.Neptune:hover::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--Neptune);
+  overflow: hidden;
+
+  animation: moveRight;
+  animation-duration: 0.3s;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}

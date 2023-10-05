@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import BottomContent from "./components/BottomContent";
+import data from "./data.json";
 
 function App() {
+  const [planet, setPlanet] = useState("Mercury");
+
+  let processData;
+
+  const selectHandler = (input) => {
+    setPlanet(input);
+  };
+
+  processData = Object.assign(
+    {},
+    ...data.filter((item) => {
+      return item.name === planet;
+    })
+  );
+  console.log(processData);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header data={data} onSelect={selectHandler} />
+      <main>
+        <MainContent data={processData} />
+        <BottomContent data={processData} />
+      </main>
+    </>
   );
 }
 
