@@ -34,6 +34,8 @@ header::after {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
 
 .navlist ul {
@@ -204,5 +206,25 @@ header::after {
   100% {
     transform: translateX(0);
     opacity: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding-block: 32px 27px;
+    padding-inline: 52px;
+    flex-direction: column;
+    gap: 39px;
+  }
+
+  .Mercury:hover::before,
+  .Venus:hover::before,
+  .Earth:hover::before,
+  .Mars:hover::before,
+  .Jupiter:hover::before,
+  .Saturn:hover::before,
+  .Uranus:hover::before,
+  .Neptune:hover::before {
+    top: -15px;
   }
 }

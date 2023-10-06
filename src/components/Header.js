@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import styles from "./Header.module.css";
 import "../vars.css";
 

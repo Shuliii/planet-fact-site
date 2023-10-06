@@ -26,6 +26,21 @@
   transform: translateX(-50%);
 }
 
+.imagecontainer > img {
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .maincontainer {
   max-width: 350px;
   justify-self: flex-end;
@@ -143,4 +158,26 @@
 
 .Neptune.active {
   background: var(--Neptune);
+}
+
+@media (max-width: 1300px) {
+  .mainsection {
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainsection {
+    flex-direction: column;
+    margin-top: 146px;
+    padding-right: 0;
+    margin-bottom: 27px;
+    padding-inline: 40px;
+  }
+
+  .maincontainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
 }

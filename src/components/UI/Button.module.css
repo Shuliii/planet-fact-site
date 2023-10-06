@@ -13,4 +13,5 @@
 
 .button:hover {
   background: var(--dark-grey);
+  cursor: pointer;
 }
