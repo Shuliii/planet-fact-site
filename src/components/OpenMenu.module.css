@@ -1,0 +1,78 @@
+@import '../vars.css';
+
+.ul {
+    display: flex;
+    color: white;
+    padding-inline: 24px;
+    flex-direction: column;
+    gap: 41px;
+    list-style-type: none;
+    margin-top: 44px;
+}
+
+.li {
+    position: relative;
+    padding-left: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+    height: 1px;
+    background: #979797;
+    opacity: 10%;
+}
+
+.li img {
+    width: 4px;
+    height: 8px;
+}
+
+.Mercury::before,
+.Venus::before,
+.Earth::before,
+.Mars::before,
+.Jupiter::before,
+.Saturn::before,
+.Uranus::before,
+.Neptune::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--Mercury);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)
+}
+
+.Venus::before {
+    background: var(--Venus);
+}
+.Earth::before {
+    background: var(--Earth);
+}
+.Mars::before {
+    background: var(--Mars);
+}
+.Jupiter::before {
+    background: var(--Jupiter);
+}
+
+.Saturn::before {
+    background: var(--Saturn);
+}
+
+.Uranus::before {
+    background: var(--Uranus);
+}
+.Neptune::before {
+    background: var(--Neptune);
+}

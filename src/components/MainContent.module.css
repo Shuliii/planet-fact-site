@@ -176,8 +176,200 @@
   }
 
   .maincontainer {
+    margin-top: 130px;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    width: 100%;
   }
+
+  .descriptioncontainer {
+    width: 339px;
+  }
+
+  .choicecontainer {
+    width: 281px;
+  }
+
+  .descriptioncontainer h1 {
+    font-size: 48px;
+  }
+
+  .descriptioncontainer p {
+    font-size: 11px;
+  }
+  
+  .source {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 720px) {
+  .mainsection {
+    margin-top: 0;
+    padding-inline: 0;
+  }
+
+  .miniContainer {
+    width: 100%;
+    padding: 20px 24px;
+    position: relative;
+  }
+
+  .miniContainer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .miniContainer::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #979797;
+    opacity: 20%;
+  }
+
+  .miniContainer ul li {
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .Mercury.underline {
+    position: relative;
+  }
+
+  .Mercury.underline::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--Mercury);
+  }
+
+  .Venus.underline {
+    position: relative;
+  }
+
+  .Venus.underline::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--Venus);
+  }
+
+  .Mars.underline {
+    position: relative;
+  }
+
+  .Mars.underline::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--Mars);
+  }
+
+  .Earth.underline {
+    position: relative;
+  }
+
+  .Earth.underline::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--Earth);
+  }
+
+  .Jupiter.underline {
+    position: relative;
+  }
+
+  .Jupiter.underline::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--Jupiter);
+  }
+
+  .Saturn.underline {
+    position: relative;
+  }
+
+  .Saturn.underline::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--Saturn);
+  }
+
+  .Uranus.underline {
+    position: relative;
+  }
+
+  .Uranus.underline::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--Uranus);
+  }
+
+  .Neptune.underline {
+    position: relative;
+  }
+
+  .Neptune.underline::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--Neptune);
+  }
+
+  .imagecontainer {
+    margin-top: 95px;
+  }
+
+  .imagecontainer img:nth-child(1) {
+    width: 173px;
+  }
+
+  .imagecontainer img:nth-child(2) {
+    width: 105px;
+  }
+
+  .descriptioncontainer {
+    height: 235px;
+    justify-self: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-inline: 24px;
+  }
+
 }

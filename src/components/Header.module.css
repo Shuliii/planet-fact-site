@@ -228,3 +228,17 @@ header::after {
     top: -15px;
   }
 }
+
+@media (max-width: 720px) {
+  header {
+    padding-block: 16px;
+    padding-inline: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .navlist img {
+    cursor: pointer;
+  }
+}
