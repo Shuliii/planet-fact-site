@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.666e92e4.css",
-    "main.js": "/static/js/main.f9645ca4.js",
+    "main.css": "/static/css/main.15030e08.css",
+    "main.js": "/static/js/main.d46fbee8.js",
     "static/js/787.6e51ec5c.chunk.js": "/static/js/787.6e51ec5c.chunk.js",
     "static/media/geology-mercury.png": "/static/media/geology-mercury.aa6732c318454e3fc480.png",
     "static/media/geology-venus.png": "/static/media/geology-venus.484f9dacbeb3b555ffba.png",
@@ -32,12 +32,12 @@
     "static/media/icon-source.svg": "/static/media/icon-source.90231c6845b7449a736412f3da2e3aaa.svg",
     "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.05a40a49142005f6faf230286ab38214.svg",
     "static/media/icon-chevron.svg": "/static/media/icon-chevron.8915cee97f993fb990aac66c578ad575.svg",
-    "main.666e92e4.css.map": "/static/css/main.666e92e4.css.map",
-    "main.f9645ca4.js.map": "/static/js/main.f9645ca4.js.map",
+    "main.15030e08.css.map": "/static/css/main.15030e08.css.map",
+    "main.d46fbee8.js.map": "/static/js/main.d46fbee8.js.map",
     "787.6e51ec5c.chunk.js.map": "/static/js/787.6e51ec5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.666e92e4.css",
-    "static/js/main.f9645ca4.js"
+    "static/css/main.15030e08.css",
+    "static/js/main.d46fbee8.js"
   ]
 }
