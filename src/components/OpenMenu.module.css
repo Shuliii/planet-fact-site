@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: slideFromRight 500ms ease-out;
 }
 
 .li::after {
@@ -75,4 +76,44 @@
 }
 .Neptune::before {
     background: var(--Neptune);
+}
+
+.li:nth-child(2) {
+    animation-delay: 25ms;
+}
+
+.li:nth-child(3) {
+    animation-delay: 50ms;
+}
+
+.li:nth-child(4) {
+    animation-delay: 75ms;
+}
+
+.li:nth-child(5) {
+    animation-delay: 100ms;
+}
+
+.li:nth-child(6) {
+    animation-delay: 125ms;
+}
+
+.li:nth-child(7) {
+    animation-delay: 150ms;
+}
+
+.li:nth-child(8) {
+    animation-delay: 175ms;
+}
+
+@keyframes slideFromRight{
+    0% {
+        transform: translateX(75%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

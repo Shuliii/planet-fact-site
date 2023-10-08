@@ -26,14 +26,14 @@
   transform: translateX(-50%);
 }
 
-.imagecontainer > img {
-  animation: fadeIn;
-  animation-duration: 1s;
+.imagecontainer img:nth-child(1),
+.imagecontainer img:nth-child(2) {
+  animation: fadeIn 500ms ease-out;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0; 
   }
 
   100% {

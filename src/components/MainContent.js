@@ -106,7 +106,7 @@ const MainContent = (props) => {
       <section className={styles.mainsection}>
         {width <=720 && miniHeaderContainer}
         <div className={styles.imagecontainer}>
-          <img src={require(`../assets/${imgHelper}`)} alt={props.data.name} />
+          <img src={require(`../assets/${imgHelper}`)} alt={props.data.name} className={styles.fadeOut}/>
           {data === 3 && (
             <img src={require(`../assets/${imgHelper2}`)} alt="" />
           )}
